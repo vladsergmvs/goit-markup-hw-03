@@ -119,6 +119,9 @@ color: #434455;
 .section{
     padding: 120px 0;
 }
+.section-hero{
+    padding: 188px 0;
+}
 .section-hero .title{
 font-weight: 700;
 font-size: 56px;
@@ -126,7 +129,7 @@ line-height: 1.07;
 letter-spacing: 0.02em;
 text-align: center;
 color: #fff; 
-
+max-width: 496px;
 
 }
 .button-hero{
@@ -140,8 +143,10 @@ color: #fff;
          cursor: pointer;
         border-radius: 4px;
             padding: 16px 32px;
-            
-            
+        display: block;
+            min-width: 169px;
+            height: 56px;
+            border: none;
 }
 .button-hero:hover, 
 .button-hero:focus {
@@ -153,7 +158,7 @@ color: #fff;
     max-width: 1440px;
     background: #2e2f42;
 }
-
+/**----------------------*/
 .visually-hidden {
 position: absolute;
     width: 1px;
@@ -166,14 +171,7 @@ position: absolute;
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-.section-features .section-title{
-font-weight: 700;
-font-size: 36px;
-line-height: 1.11111;
-letter-spacing: 0.02em;
-text-align: center;
-color: #2e2f42; 
-}
+
 
 .section-features .title{
         font-weight: 500;
@@ -181,6 +179,7 @@ color: #2e2f42;
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: #2e2f42;
+        margin-bottom: 8px;
 }
 
 .section-features .text{
@@ -193,6 +192,10 @@ color: #2e2f42;
 }
 .section-features .list{
     display: flex;
+    gap: 24px;
+}
+.section-features .item {
+    width: calc((100% - 72px) / 4);
 }
 /*---------3----------*/
 .section-our_team .section-title{
@@ -236,10 +239,10 @@ background-color: #F4F4FD;
     gap: 24px;
 }
 .section-our_team .list .item{
-    width: calc(100% - 24 * 3) / 4;
+    width: calc((100% - 72px) / 4);
 }
 .section-our_team .container-item{
-    padding: 32px 16px;
+    padding: 32px 0;
 }
 /*------------4-------------*/
 .section-our_portfolio .section-title{
@@ -270,8 +273,12 @@ background-color: #F4F4FD;
 }
 .section-our_portfolio .list{
     display: flex;
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 48px;
     flex-wrap: wrap;
+}
+.section-our_portfolio .item {
+    width: calc((100% - 48px) / 3);
 }
 .section-our_portfolio .container-item{
    padding: 32px 16px; 
@@ -296,4 +303,8 @@ background-color: #F4F4FD;
 .footer-page{
     background: #2e2f42;
     padding: 100px 0;
+}
+.footer-page .link{
+    display: inline-block;
+    margin-bottom: 16px;
 }
