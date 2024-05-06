@@ -121,6 +121,7 @@ color: #434455;
 }
 .section-hero{
     padding: 188px 0;
+    background: #2e2f42;
 }
 .section-hero .title{
 font-weight: 700;
@@ -130,7 +131,7 @@ letter-spacing: 0.02em;
 text-align: center;
 color: #fff; 
 max-width: 496px;
-
+margin: 0 auto 48px;
 }
 .button-hero{
     font-family: "Roboto",sans-serif;
@@ -147,6 +148,7 @@ max-width: 496px;
             min-width: 169px;
             height: 56px;
             border: none;
+            margin: 0 auto;
 }
 .button-hero:hover, 
 .button-hero:focus {
@@ -154,10 +156,7 @@ max-width: 496px;
     background: #404bbf;
 }
 
-.section-hero{
-    max-width: 1440px;
-    background: #2e2f42;
-}
+
 /**----------------------*/
 .visually-hidden {
 position: absolute;
@@ -296,6 +295,7 @@ background-color: #F4F4FD;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #f4f4fd;
+        width: 264px;
 }
 .footer-page .span-item{
     color: #f4f4fd;
